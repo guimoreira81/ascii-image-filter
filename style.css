@@ -2,32 +2,30 @@ body{
     background-color: rgb(25, 25, 25);
     color: white;
 }
+*{
+    margin: 0;
+}
 
 h1{
     text-align: center;
 }
 
-#preview{
+canvas{
     border: white solid .1em;
     display: inline-block;
-    margin: 0;
-    width: 100vh;
-    height:100vh;
-    margin-right: 2em;
+    width: 100%;
+    height: 50%;
 }
 
-#result{
-    border: white solid .1em;
-    display: inline-block;
-    width: 100vh;
-    height: 100vh;
-}
 #img-menu{
+    display: flex;
+    width: 100vw;
+    height: 35vw;
     margin-top: 3em;
     text-align: center;
 }
 
-#img-menu > div{
+#img-menu > div > div{
     width: 10vh;
     height: 7.5vh;
     background-color: rgb(50, 50, 50);
@@ -35,17 +33,18 @@ h1{
     color: white;
 }
 
-#img-menu > div:hover{
+#img-menu > div > div:hover{
     background-color: darkgray;
-    
 }
 
-div > input[type="file"]{
+input[type="file"]{
     display: none;
 }
 
 #convert{
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     color: white;
     background-color: rgb(25, 25, 25);
     border: solid white .1em;
@@ -61,4 +60,18 @@ div > input[type="file"]{
 a{
     color: white;
     text-decoration: none;
+}
+
+#left{
+    display: block;
+    margin-left: 10vw;
+    width: 30vw;
+    height: 60vw;
+}
+
+#right{
+    display: block;
+    margin-left: 20vw;
+    width: 30vw;
+    height: 60vw;
 }

@@ -9,16 +9,19 @@
 <body>
     <h1>ASCII Image Filter</h1>
     <div id="img-menu">
-        <canvas id="preview"></canvas>
-        <div id="upload-img">
-            <input type="file" accept="image/*" id="fileInput">
-            <label>Upload Image</label>
+        <div id="left">
+            <canvas id="preview"></canvas>
+            <div id="upload-img">
+                <input type="file" accept="image/*" id="fileInput">
+                <label>Upload Image</label>
+            </div>
         </div>
-    
-
-        <canvas id="result"></canvas>
-        <div id="download-img">
-            <a id="fileOutput" href="/assets/images/image.png" download>Download Image</a>
+        
+        <div id="right">
+            <canvas id="result"></canvas>
+            <div id="download-img">
+                <a id="fileOutput" href="/assets/images/image.png" download>Download Image</a>
+            </div>
         </div>
     </div>
     <button id="convert">Convert</button>

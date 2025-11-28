@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    display: block;
+}
+
+canvas{
+    display: block;
+    
+}

@@ -51,8 +51,14 @@ div > input[type="file"]{
     border: solid white .1em;
     width: 10vh;
     height: 5vh;
+    background-color: green;
 }
 
 #convert:hover{
     background-color: darkgray;
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }

@@ -13,7 +13,7 @@ resultCanvas.height = resultCanvas.clientHeight*dpr;
 resultCtx.scale(dpr, dpr);
 
 const SCALE = 10
-resultCtx.font = SCALE+"px monospace"
+resultCtx.font = `bold ${SCALE*1.3}px monospace`
 const colorMap = [
   ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
   ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"],
@@ -92,4 +92,10 @@ convertBtn.addEventListener("click", (event) => {
         resultCtx.imageSmoothingEnabled = false
         resultCtx.fillText(char, px.x, px.y)
     }
+    fileOutput.download = "image.png"
+    fileOutput.href = resultCanvas.toDataURL("image/png")
+})
+
+fileOutput.addEventListener("click", (event)=>{
+    console.log("click")
 })

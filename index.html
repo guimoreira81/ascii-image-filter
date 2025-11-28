@@ -8,7 +8,20 @@
 </head>
 <body>
     <h1>ASCII Image Filter</h1>
-    <img src="assets/images/standart-photo.png">
-    <canvas></canvas>
-</body>
+    <div id="img-menu">
+        <canvas id="preview"></canvas>
+        <div id="upload-img">
+            <input type="file" accept="image/*" id="fileInput">
+            <label>Upload Image</label>
+        </div>
+    
+
+        <canvas id="result"></canvas>
+        <div id="download-img">
+            <a id="fileOutput" href="/assets/images/image.png" download>Download Image</a>
+        </div>
+    </div>
+    <button id="convert">Convert</button>
+    <script src="script.js"></script>
+</body> 
 </html>

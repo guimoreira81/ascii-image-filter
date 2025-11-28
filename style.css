@@ -7,11 +7,52 @@ h1{
     text-align: center;
 }
 
-img{
-    display: block;
+#preview{
+    border: white solid .1em;
+    display: inline-block;
+    margin: 0;
+    width: 100vh;
+    height:100vh;
+    margin-right: 2em;
 }
 
-canvas{
-    display: block;
+#result{
+    border: white solid .1em;
+    display: inline-block;
+    width: 100vh;
+    height: 100vh;
+}
+#img-menu{
+    margin-top: 3em;
+    text-align: center;
+}
+
+#img-menu > div{
+    width: 10vh;
+    height: 7.5vh;
+    background-color: rgb(50, 50, 50);
+    border: solid white .1em;
+    color: white;
+}
+
+#img-menu > div:hover{
+    background-color: darkgray;
     
+}
+
+div > input[type="file"]{
+    display: none;
+}
+
+#convert{
+    margin: auto;
+    color: white;
+    background-color: rgb(25, 25, 25);
+    border: solid white .1em;
+    width: 10vh;
+    height: 5vh;
+}
+
+#convert:hover{
+    background-color: darkgray;
 }
